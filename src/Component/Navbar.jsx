@@ -11,19 +11,20 @@ function Navbar() {
         />
         <div className=" flex  gap-14 ml-20">
           {["Home", "Work", "Culture", "", "News"].map((elem, index) =>
-            elem.length === 0 ? (
-              <span className="w-[2px] h-7 bg-zinc-800"></span>
+            elem.length === 0 ? ( 
+              <span className="w-[2px] h-7 bg-zinc-800" key={index} ></span>
             ) : (
-              <a className="text-md flex items-center gap-1">
+              <a className="text-md flex items-center gap-1" key={index}>
                 {index === 1 && (
                   <span
+                  key={index}
                     style={{ boxShadow: "0 0 0.25em #00FF19" }}
                     className="bg-green-500  w-1.5 h-1.5   inline-block rounded "
                   ></span>
                 )}
                 {elem}
               </a>
-            )
+            ),
           )}
         </div>
       </div>
