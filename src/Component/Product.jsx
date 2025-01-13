@@ -3,7 +3,7 @@ import Button from "./Button";
 function Product({ item, mover, count }) {
   const [hover, setHover] = useState(false);
   return (
-    <div className="h-[23rem] w-full py-14">
+    <div className="h-[22rem] w-full py-10">
       <div
         style={{
           backgroundImage: hover ? `url(${item.bgimage})` : "none",

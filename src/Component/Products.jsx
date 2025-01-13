@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Products() {
   const [pos, setPos] = useState(0);
   const mover = (val) => {
-    setPos(val * 23);
+    setPos(val * 22);
   };
 
   var data = [
@@ -161,15 +161,16 @@ function Products() {
       ))}
       <div className="w-full h-full top-0 absolute  pointer-events-none  ">
         <motion.div
-          className="window h-[23rem] w-[30rem] absolute left-[44%]  overflow-hidden "
-          transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
+          className="window h-[22rem] w-[30rem] absolute left-[44%]  overflow-hidden "
+          // transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: pos + `rem` }}
+          transition={{ ease: [0.25, 1, 0.5, 1], duration: 0.4 }}
         >
           {data.map((item, index) => (
             <motion.div
               animate={{ y: -pos + `rem` }}
-              transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
+              transition={{ ease: [0.25, 1, 0.5, 1], duration: 0.4 }} 
               className="w-full h-full rounded-xl overflow-hidden"
             >
               <video autoPlay muted loop src={item.url}></video>
