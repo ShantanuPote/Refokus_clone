@@ -25,7 +25,7 @@ function Products() {
         "We've created an interactive site using generative AI to allow users to engage with our thinking about Ai, industry trends and design.",
       live: true,
       case: false,
-      url: "https://cdn.refokus.com/website/Cula_promo_new_4_3.mp4",
+      url: "https://cdn.refokus.com/website/TTR/TTR%20project%20video%204_3_H.264.webm",
       bgimage:
         "https://assets-global.website-files.com/6334198f239547f2fccd84c1/635299a728ba3624405c1f46_Year%20in%20Review%202022%20bg-p-1600.png",
     },
