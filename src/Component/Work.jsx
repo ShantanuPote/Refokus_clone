@@ -80,7 +80,7 @@ function Work() {
   return (
     <div className="w-full mt-5">
       <div className="max-w-screen-xl mx-auto text-center relative">
-        <h1 className=" text-medium text-[35vw] leading-none font-regular tracking-tight relative">
+        <h1 className="  text-medium text-[38vw] leading-none font-semibold tracking-tight relative">
           work
         </h1>
         <div className="absolute w-full h-full top-0">
